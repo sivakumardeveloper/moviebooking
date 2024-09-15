@@ -1,0 +1,25 @@
+<div class="login-container">
+  <img class="film" src="assets/images/Screenshot (33).png" alt="">
+  <div class="logo">Rotten Potatoes</div>
+  <div class="desc">
+    <p> Rotten Potatoes is the word's most trusted recommendatation resource for qujality entertainment. As the leading
+      online aggregator of movie and tv show revies from crtices.we provide
+      jans witn a compresive quide to.what's fresh and what is Rotten-in threaters and at home. if your an entertainment
+      fan looking for a recommudation or to share an opinion you've come to right place.</p>
+  </div>
+  <div class="login-form">
+    <div class="form-groum">
+      <label for="uname">Username</label>
+      <input type="text" name="uname" class="form-control" [(ngModel)]="username">
+    </div>
+    <div class="form-groum">
+      <label for="pword">Password</label>
+      <input type="password" name="pword" class="form-control" [(ngModel)]="password">
+    </div>
+
+    <div class="btn-container">
+      <div class="error">{{ errorMsg }}</div>
+      <button class="btn btn-dark" (click)="login()">Login</button>
+    </div>
+  </div>
+</div>

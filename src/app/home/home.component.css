@@ -1,0 +1,75 @@
+.home-container{
+    display: flex;
+    .all-movies{
+        width: 80%;
+        min-height: calc(100vh - 80px );
+        border-right: 1px solid #fdc827;
+        padding: 20px 20px;
+        font-family: "Roboto",sans-serif;
+         .top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            h4{
+                text-transform: uppercase;
+                font-weight: bold;
+                border-left:5px solid #ff9900;
+                padding-left: 5px;
+            }
+            .view-all{
+                color: #ff00a2;
+                cursor: pointer;
+            }
+         }
+         .movies-thumbnail{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 15px;
+            .movie{
+                .cover{
+                    img{
+                        border-radius: 5px;
+                    }
+                }
+                .details{
+                    width: 180px;
+                    .name{
+                        font-weight: bold;
+                        height: 25px;
+                        margin-top: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+         }
+
+    }
+    .popular-movies{
+        width: 30%;
+        min-height: calc(100vh - 80px);
+        padding: 20px 60px;
+        font-family: "Roboto",sans-serif;
+        h4{
+            text-transform: uppercase;
+            font-weight: bold;
+            border-left:5px solid #ff9900;
+            padding-left: 10px;
+        }
+    }
+}
+.rating{
+    padding-right: 22px;
+    position: relative;
+    .rating-value{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        font-weight: bold;
+    }
+}
+
+
+
+/* bootstrap rating in css */
+

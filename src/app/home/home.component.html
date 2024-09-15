@@ -1,0 +1,69 @@
+<app-header></app-header>
+
+<div class="home-container">
+    <div class="all-movies">
+        <div class="trending-movies">
+            <div class="top">
+                <h4>trending-movies</h4>
+                <div class="view-all">View All</div>
+            </div>
+            <div class="movies-thumbnail">
+                <div class="movie" *ngFor="let movie of trendingMovie">
+                    <div class="cover" (click)="goToMoivie('trending',movie.id)">
+                        <img [src]="movie.cover" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="name" (click)="goToMoivie('trending',movie.id)">{{movie.name}}</div>
+                        <div class="rating">
+                            {{movie.rating}}
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- popular -->
+        <div class="theater-movies">
+            <div class="top">
+                <h4>popular in theater</h4>
+                <div class="view-all">View All</div>
+            </div>
+            <div class="movies-thumbnail">
+                <div class="movie" *ngFor="let movie of theaterMovies">
+                    <div class="cover" (click)="goToMoivie('theater',movie.id)">
+                        <img [src]="movie.cover" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="name" (click)="goToMoivie('theater',movie.id)">{{movie.name}}</div>
+                        <div class="rating">
+                            {{movie.rating}}
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popular-movies">
+        <h4>all time popular</h4>
+        <div class="movies">
+            <div class="movie" *ngFor="let movie of popularMovies">
+                <div class="cover">
+                    <img [src]="movie.cover" alt="">
+                </div>
+                <div class="details">
+                    <div class="name" (click)="goToMoivie('popular',movie.id)">{{movie.name}}</div>
+                    <div class="rating">
+                        {{movie.rating}}
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</div>
+   
+  
+
+   
